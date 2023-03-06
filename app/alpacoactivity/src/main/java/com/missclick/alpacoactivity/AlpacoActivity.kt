@@ -39,7 +39,6 @@ class AlpacoActivity : AppCompatActivity() {
             settings.loadWithOverviewMode = true
             settings.domStorageEnabled = true
             settings.databaseEnabled = true
-            settings.setAppCacheEnabled(true)
             settings.allowContentAccess = true
             settings.allowUniversalAccessFromFileURLs = true
             settings.useWideViewPort = true
