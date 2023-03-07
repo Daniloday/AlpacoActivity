@@ -17,6 +17,10 @@ import java.io.File
 
 class AlpacoActivity : AppCompatActivity() {
 
+    companion object{
+        const val NAME = "url"
+    }
+
     private lateinit var missView : WebView
 
     @RequiresApi(Build.VERSION_CODES.M)
@@ -44,7 +48,7 @@ class AlpacoActivity : AppCompatActivity() {
             settings.useWideViewPort = true
             settings.javaScriptCanOpenWindowsAutomatically = true
             settings.cacheMode = WebSettings.LOAD_DEFAULT
-            loadUrl(intent.getStringExtra("url").toString())
+            loadUrl(intent.getStringExtra(NAME).toString())
         }
     }
 
