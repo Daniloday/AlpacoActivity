@@ -13,6 +13,7 @@
         <activity
             android:name=".AlpacoActivity"
             android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:windowSoftInputMode="adjustResize"
             android:exported="false">
