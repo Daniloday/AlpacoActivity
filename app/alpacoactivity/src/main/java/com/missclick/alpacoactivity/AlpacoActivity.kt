@@ -19,11 +19,12 @@ import java.io.File
 class AlpacoActivity : AppCompatActivity() {
 
     companion object{
-        const val NAME : String = "url"
+        private const val NAME : String = "url"
         fun start(activity: Activity, url : String){
             activity.startActivity(Intent(activity,AlpacoActivity::class.java).apply {
                 putExtra(NAME,url)
             })
+            activity.finish()
         }
     }
 
