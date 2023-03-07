@@ -18,7 +18,7 @@ import java.io.File
 class AlpacoActivity : AppCompatActivity() {
 
     companion object{
-        const val NAME = "url"
+        const val NAME : String = "url"
     }
 
     private lateinit var missView : WebView
