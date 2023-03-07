@@ -19,7 +19,7 @@ import java.io.File
 
 class AlpacoActivity : AppCompatActivity() {
 
-    @Keep
+
     companion object{
         private const val NAME : String = "url"
         fun start(activity: Activity, url : String){
