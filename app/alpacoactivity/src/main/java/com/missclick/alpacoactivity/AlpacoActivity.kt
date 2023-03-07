@@ -1,6 +1,7 @@
 package com.missclick.alpacoactivity
 
 import android.Manifest
+import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
@@ -19,6 +20,11 @@ class AlpacoActivity : AppCompatActivity() {
 
     companion object{
         const val NAME : String = "url"
+        fun start(activity: Activity, url : String){
+            activity.startActivity(Intent(activity,AlpacoActivity::class.java).apply {
+                putExtra(NAME,url)
+            })
+        }
     }
 
     private lateinit var missView : WebView
