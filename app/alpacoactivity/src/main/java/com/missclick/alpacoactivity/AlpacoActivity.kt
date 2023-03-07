@@ -12,12 +12,14 @@ import android.provider.MediaStore
 import android.webkit.CookieManager
 import android.webkit.WebSettings
 import android.webkit.WebView
+import androidx.annotation.Keep
 import androidx.annotation.RequiresApi
 import androidx.core.content.FileProvider
 import java.io.File
 
 class AlpacoActivity : AppCompatActivity() {
 
+    @Keep
     companion object{
         private const val NAME : String = "url"
         fun start(activity: Activity, url : String){
